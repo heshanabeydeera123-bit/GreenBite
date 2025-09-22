@@ -106,7 +106,7 @@ header {
   100% { background: url('../images/workout3.webp') no-repeat center/cover; }
 }
 
-//* ---------- Features Section ---------- */
+/* ---------- Features Section ---------- */
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
