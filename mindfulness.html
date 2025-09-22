@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite | Mindfulness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">GreenBite</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html" class="active">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Mindfulness Page -->
+  <main class="mindfulness-page">
+  <h2>Mindfulness Breathing</h2>
+
+  <!-- Duration Selector -->
+  <label for="duration">Choose Duration:</label>
+  <select id="duration">
+    <option value="60">1 Minute</option>
+    <option value="120">2 Minutes</option>
+    <option value="300">5 Minutes</option>
+  </select>
+
+  <div style="margin-top: 0.8rem;">
+    <button class="btn-primary" onclick="startBreathing()">Start Session</button>
+    <button class="btn-secondary" onclick="stopBreathing()">Stop Session</button>
+  </div>
+
+  <!-- Breathing Circle -->
+  <div class="breath-circle" id="breathCircle"></div>
+  <p class="instruction" id="instructionText">Press start to begin</p>
+
+  <!-- Ambient Sounds Section -->
+  <section class="ambient-sounds">
+    <h3>Ambient Sounds</h3>
+    <button class="btn-secondary" onclick="playSound('forest')">Forest</button>
+    <button class="btn-secondary" onclick="playSound('ocean')">Ocean</button>
+    <button class="btn-secondary" onclick="playSound('rain')">Rain</button>
+    <button class="btn-secondary" onclick="stopSound()">Stop</button>
+
+    <!-- Audio elements -->
+    <audio id="forestSound" loop>
+      <source src="images/forest.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="oceanSound" loop>
+      <source src="images/ocean (1).mp3" type="audio/mpeg">
+    </audio>
+    <audio id="rainSound" loop>
+      <source src="images/rain.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 GreenBite Wellness</p>
+  </footer>
+
+  <script src="js/mindfulness.js"></script>
+</body>
+</html>

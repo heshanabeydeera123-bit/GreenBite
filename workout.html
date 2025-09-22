@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GreenBite | Workout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar (keep consistent with other pages) -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">GreenBite</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html" class="active">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Workout Page -->
+  <main class="workout-page">
+    <div class="workout-controls">
+
+      <h2>Workout Generator</h2>
+
+      <label for="bodypart">Choose Body Part:</label>
+      <select id="bodypart">
+        <option value="full">Full Body</option>
+        <option value="arms">Arms</option>
+        <option value="legs">Legs</option>
+        <option value="chest">Chest</option>
+        <option value="back">Back</option>
+        <option value="core">Core</option>
+      </select>
+
+      <label for="equipment">Available Equipment:</label>
+      <select id="equipment">
+        <option value="none">No Equipment</option>
+        <option value="dumbbells">Dumbbells</option>
+        <option value="bands">Resistance Bands</option>
+        <option value="kettlebell">Kettlebell</option>
+      </select>
+
+      <div style="margin-top:12px;">
+        <button id="startBtn" class="btn-primary" onclick="startWorkout()">Start Workout</button>
+        <button id="stopBtn" class="btn-secondary" onclick="stopWorkout()" disabled>Stop</button>
+        <button id="nextBtn" class="btn-secondary" onclick="nextExercise()" disabled>Next Exercise</button>
+      </div>
+
+      <!-- Exercise Display -->
+      <div id="exerciseDisplay" style="margin-top:16px;">
+        <h3 id="exerciseName">Get Ready!</h3>
+        <p id="countdown">00:00</p>
+        <p id="progress" style="font-size:0.9rem;color:#666;margin-top:8px;">No workout running</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GreenBite Wellness</p>
+  </footer>
+
+  <!-- LOAD the workout JS (put this file in js/workout.js) -->
+  <script src="js/workout.js"></script>
+</body>
+</html>

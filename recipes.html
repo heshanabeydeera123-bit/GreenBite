@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GreenBite | Recipes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">GreenBite</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" class="active">Recipes</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="workout.html">Workout</a></li>
+        <li><a href="mindfulness.html">Mindfulness</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Recipes Page -->
+  <main class="recipes-page">
+    <h2>Healthy Recipes</h2>
+    <div class="recipe-grid">
+
+      <!-- Breakfast -->
+      <div class="recipe-card" onclick="openRecipe('avocado-berry')">
+        <img src="images/Avacado.png" alt="Avocado & Berry Bowl">
+        <h3>Avocado & Berry Bowl</h3>
+        <p>A refreshing antioxidant-rich breakfast.</p>
+        <span class="tag">Breakfast</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('overnight-oats')">
+        <img src="images/overnight.jpg" alt="Overnight Oats">
+        <h3>Overnight Oats</h3>
+        <p>Easy no-cook make-ahead breakfast.</p>
+        <span class="tag">Breakfast</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('green-smoothie')">
+        <img src="images/greenn.jpg" alt="Green Smoothie">
+        <h3>Green Smoothie</h3>
+        <p>Loaded with vitamins and minerals.</p>
+        <span class="tag">Breakfast</span>
+      </div>
+
+      <!-- Lunch -->
+      <div class="recipe-card" onclick="openRecipe('chicken-salad')">
+        <img src="images/Grilled.jpg" alt="Grilled Chicken Salad">
+        <h3>Grilled Chicken Salad</h3>
+        <p>Protein-packed with fresh veggies.</p>
+        <span class="tag">Lunch</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('quinoa-salad')">
+        <img src="images/Quinoa.jpg" alt="Quinoa Salad">
+        <h3>Quinoa Salad</h3>
+        <p>Light and protein-packed.</p>
+        <span class="tag">Lunch</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('veggie-wrap')">
+        <img src="images/veggie.jpg" alt="Veggie Wrap">
+        <h3>Veggie Wrap</h3>
+        <p>Quick, healthy, and colorful.</p>
+        <span class="tag">Lunch</span>
+      </div>
+
+      <!-- Dinner -->
+      <div class="recipe-card" onclick="openRecipe('salmon')">
+        <img src="images/salmon.jpg" alt="Salmon Dish">
+        <h3>Lemon Herb Salmon</h3>
+        <p>Rich in omega-3, elegant dinner.</p>
+        <span class="tag">Dinner</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('chickpea-curry')">
+        <img src="images/chickpea.jpg" alt="Chickpea Curry">
+        <h3>Chickpea Curry</h3>
+        <p>A plant-based protein curry.</p>
+        <span class="tag">Dinner</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('stuffed-peppers')">
+        <img src="images/bell.jpg" alt="Stuffed Peppers">
+        <h3>Stuffed Bell Peppers</h3>
+        <p>Colorful peppers filled with rice & beans.</p>
+        <span class="tag">Dinner</span>
+      </div>
+
+      <!-- Snacks -->
+      <div class="recipe-card" onclick="openRecipe('fruit-salad')">
+        <img src="images/fruit.jpg" alt="Fruit Salad">
+        <h3>Fruit Salad</h3>
+        <p>Refreshing seasonal fruits.</p>
+        <span class="tag">Snack</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('yogurt-parfait')">
+        <img src="images/yougurt.jpg" alt="Yogurt Parfait">
+        <h3>Yogurt Parfait</h3>
+        <p>Layers of yogurt, fruit, and granola.</p>
+        <span class="tag">Snack</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('energy-balls')">
+        <img src="images/energy.jpg" alt="Energy Balls">
+        <h3>Energy Balls</h3>
+        <p>No-bake bite-sized snacks.</p>
+        <span class="tag">Snack</span>
+      </div>
+
+      <!-- Soups -->
+      <div class="recipe-card" onclick="openRecipe('lentil-soup')">
+        <img src="images/lentil.webp" alt="Lentil Soup">
+        <h3>Lentil Soup</h3>
+        <p>Hearty and comforting.</p>
+        <span class="tag">Soup</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('chicken-soup')">
+        <img src="images/soup.jpg" alt="Chicken Soup">
+        <h3>Chicken Soup</h3>
+        <p>Classic comfort food.</p>
+        <span class="tag">Soup</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('black-bean-soup')">
+        <img src="images/black.jpg" alt="Black Bean Soup">
+        <h3>Black Bean Soup</h3>
+        <p>Filling and protein-rich.</p>
+        <span class="tag">Soup</span>
+      </div>
+
+      <!-- Extras -->
+      <div class="recipe-card" onclick="openRecipe('veggie-stirfry')">
+        <img src="images/vegg.jpg" alt="Veggie Stir-Fry">
+        <h3>Veggie Stir-Fry</h3>
+        <p>Quick colorful stir-fried veggies.</p>
+        <span class="tag">Extra</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('baked-sweet-potato')">
+        <img src="images/baked.jpg" alt="Baked Sweet Potato">
+        <h3>Baked Sweet Potato</h3>
+        <p>Nutrient-rich and simple.</p>
+        <span class="tag">Extra</span>
+      </div>
+
+      <div class="recipe-card" onclick="openRecipe('zucchini-noodles')">
+        <img src="images/zucchini.jpg" alt="Zucchini Noodles">
+        <h3>Zucchini Noodles</h3>
+        <p>A low-carb pasta alternative.</p>
+        <span class="tag">Extra</span>
+      </div>
+
+    </div>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="recipe-modal">
+      <div class="recipe-content">
+        <span class="close-btn" onclick="closeRecipe()">&times;</span>
+        <div id="recipeDetails"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GreenBite Wellness</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
